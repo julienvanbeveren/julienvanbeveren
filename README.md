@@ -1,4 +1,8 @@
 ### Hi there 👋
+<h1 align="center">:wave: Hey, I am Julien Van Beveren</h1>
+<h3 align="center"><WebDeveloper /></h3>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=julienvanbeveren&label=Profile%20views&color=0e75b6&style=flat" alt="julienvanbeveren" /> </p>
 
 <!--
 **julienvanbeveren/julienvanbeveren** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
