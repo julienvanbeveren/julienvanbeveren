@@ -4,7 +4,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=julienvanbeveren&label=Profile%20views&color=0e75b6&style=flat" alt="julienvanbeveren" /> </p>
 
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=julienvanbeveren&" alt="julienvanbeveren" /></p>
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=julienvanbeveren&" alt="julienvanbeveren" /></p>
 <!--
 **julienvanbeveren/julienvanbeveren** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
