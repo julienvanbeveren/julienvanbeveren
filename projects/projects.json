@@ -1,18 +1,5 @@
 [
     {
-        "slug": "template", 
-        "name": "template",
-        "short-description": "Lorem ipsum",
-        "long-description": "Lorem ipsum dolor sit amet",
-        "status": "Finished",
-        "tags": [],
-        "date": 0,
-        "github": "https://www.github.com",
-        "website": "https://www.website.com",
-        "preview": "https://www.github.com/{asset-url}"
-
-    },
-    {
         "slug": "weather-app", 
         "name": "React Weather App",
         "short-description": "A simple React App that displays the current weather.",
