@@ -1,0 +1,27 @@
+[
+    {
+        "slug": "template", 
+        "name": "template",
+        "short-description": "Lorem ipsum",
+        "long-description": "Lorem ipsum dolor sit amet",
+        "status": "Finished",
+        "tags": [],
+        "date": 0,
+        "github": "https://www.github.com",
+        "website": "https://www.website.com",
+        "preview": "https://www.github.com/{asset-url}"
+
+    },
+    {
+        "slug": "weather-app", 
+        "name": "React Weather App",
+        "short-description": "A simple React App that displays the current weather.",
+        "long-description": "For my first React App ever I made a simple app that displays the weather of a couple hard coded locations using a weather API. ~design from Dribbble",
+        "status": "Finished",
+        "tags": ["React", "Javascript", "CSS"],
+        "date": 1642114800,
+        "github": "https://www.github.com/julienvanbeveren/react-weather-app",
+        "website": "https://weather.julienvanbeveren.com",
+        "preview": ""
+    }
+]
