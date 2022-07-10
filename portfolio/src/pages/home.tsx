@@ -40,7 +40,7 @@ export default function Homepage() {
                     <div className="dividor"></div>
                     <div className="projects-grid">
                         {data && data.map((project, i) => {
-                            return <Project data={project} key={i}/>
+                            return <Project data={project} key={i} delay={i*100}/>
                         })}
                     </div>
                 </div>
