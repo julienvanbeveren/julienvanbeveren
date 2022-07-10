@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react'
 import { useFetch } from '@julienvanbeveren/hooks'
+import Project from '../components/Project'
 
 export default function Homepage() {
 
-    const { loading, error, data } = useFetch<{}>('')
+    const { loading, error, data } = useFetch<[]>('https://raw.githubusercontent.com/julienvanbeveren/julienvanbeveren/main/projects/projects.json')
 
+    if (data) {
+        console.log(data)
+    }
 
     return (
         <main>
@@ -19,8 +23,11 @@ export default function Homepage() {
             <section>
                 <div className="container">
                     <h1 className="section-title">Projects</h1>
+                    <div className="dividor"></div>
                     <div className="projects-grid">
-
+                        {data && data.splice(0,1).map((project, i) => {
+                            return <Project data={project} key={i}/>
+                        })}
                     </div>
                 </div>
             </section>

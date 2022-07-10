@@ -23,5 +23,41 @@
         "github": "https://www.github.com/julienvanbeveren/react-weather-app",
         "website": "https://weather.julienvanbeveren.com",
         "preview": ""
+    },
+    {
+        "slug": "snypemedia-website", 
+        "name": "Snype Media Website",
+        "short-description": "A landing page for Snype Media.",
+        "long-description": "This landing page was made with vanilla HTML, CSS, and Javascript.",
+        "status": "Active",
+        "tags": ["HTML", "Javascript", "CSS"],
+        "date": 1638226800,
+        "github": "",
+        "website": "https://www.snypemedia.com",
+        "preview": ""
+    },
+    {
+        "slug": "secret-message", 
+        "name": "Secret Message",
+        "short-description": "A side for de- and encoding text messages.",
+        "long-description": "By using different types of white-space chars I am able to convert any text message to binarry and map every 1 to a certain white-char and every 0 to another white-space char. To decode the message I just reverse the process.",
+        "status": "Finished",
+        "tags": ["HTML", "Javascript", "CSS", "Python"],
+        "date": 1643410800,
+        "github": "",
+        "website": "https://secretmessage.julienvanbeveren.com",
+        "preview": ""
+    },
+    {
+        "slug": "snype-photography", 
+        "name": "Snype Photography",
+        "short-description": "A SaaS product to enhance photo delivery",
+        "long-description": "",
+        "status": "Active",
+        "tags": ["React", "Javascript", "CSS", "Python", "Flask", "Node.js", "Typescript", "HTML"],
+        "date": 1643410800,
+        "github": "",
+        "website": "https://www.snype.photos",
+        "preview": ""
     }
 ]

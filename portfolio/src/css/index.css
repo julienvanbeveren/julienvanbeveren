@@ -36,9 +36,7 @@ section {
 .section-title {
 }
 
-.section-title::after {
-  content: '';
-  position: absolute;
+.dividor {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -48,4 +46,20 @@ section {
 
 .projects-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px 10px;
+  margin: 15px 0;
+}
+
+.project-card {
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.project-card h1 {
+  margin: 0;
+  font-weight: 500;
 }
