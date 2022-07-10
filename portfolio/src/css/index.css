@@ -41,14 +41,14 @@ section {
   bottom: 0;
   width: 100%;
   height: 3px;
-  background-color: var(--primary-clr);
+  background-color: var(--accent-clr);
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 10px 10px;
-  margin: 15px 0;
+  gap: 25px 25px;
+  margin: 25px 0;
 }
 
 .project-card {
@@ -62,4 +62,8 @@ section {
 .project-card h1 {
   margin: 0;
   font-weight: 500;
+}
+
+.project-card p {
+  margin: 0;
 }
