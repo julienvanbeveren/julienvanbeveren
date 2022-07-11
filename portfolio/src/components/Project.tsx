@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Github from '../assets/Github'
+import Website from '../assets/Website'
 
 interface ProjectProps {
     data: ProjectData
@@ -16,6 +17,7 @@ export interface ProjectData {
     status: 'Finished' | 'Active' | 'Discontinued'
     tags: []
     website: string
+    date: number
 }
 
 export default function Project({ data, delay }: ProjectProps) {
@@ -30,8 +32,10 @@ export default function Project({ data, delay }: ProjectProps) {
     
     return (
         <div className={`project-card ${show ? 'visible' : 'hidden'}`}>
-            <h1>{data.slug}</h1>
-            <p>{data['short-description']}</p>
+            <div className="project-header">
+                <h1 onClick={() => window.open(data.github || data.website)}>{data.slug}</h1>
+                <p>{data['short-description']}</p>
+            </div>
             <ProjectLinks data={data}/>
         </div>
     )
@@ -47,7 +51,8 @@ function ProjectLinks({ data }: ProjectLinksProps) {
 
     return (
         <div className="project-links-wrapper">
-            {data.github && <Github />}
+            {data.website && <Website link={data.website}/>}
+            {data.github && <Github link={data.github}/>}
         </div>
     )
 }

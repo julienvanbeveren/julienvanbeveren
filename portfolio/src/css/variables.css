@@ -2,6 +2,7 @@
     --primary-bg: #0f0f1c;
     --secondary-bg: #111827;
 
-    --primary-clr: hsl(0, 0%, 100%);
+    --primary-clr: #ffffff;
+    --secondary-clr: #e8e8e8bb;
     --accent-clr: #1fa8ed;
 }

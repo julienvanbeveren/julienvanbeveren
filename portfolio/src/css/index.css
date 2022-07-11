@@ -1,13 +1,16 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
-  ::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
   background: var(--primary-bg); 
 }
-  ::-webkit-scrollbar-thumb {
+
+::-webkit-scrollbar-thumb {
   background: var(--secondary-bg); 
   border-radius: 100px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #171d2b; 
 }
@@ -45,9 +48,12 @@ section {
 
 .hero.container h1 {
   font-size: 50px;
+  margin: 0;
 }
 
-.section-title {
+.hero.container h2 {
+  color: var(--secondary-clr);
+  margin: 10px 0;
 }
 
 .dividor {
@@ -70,10 +76,13 @@ section {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 8px;
   opacity: 0;
   transform: translateY(100px);
   transition: all 300ms ease;
+  gap: 10px;
+  min-height: 150px;
 }
 
 .project-card.visible {
@@ -84,11 +93,20 @@ section {
 
 .project-card h1 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.project-card:hover h1 {
+  color: var(--accent-clr);
+  transition: all 300ms ease;
 }
 
 .project-card p {
   margin: 0;
+  color: var(--secondary-clr);
 }
 
 .project-links-wrapper {
@@ -96,4 +114,24 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  gap: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: var(--accent-clr);
+}
+
+.project-link {
+  cursor: pointer;
+  transition: all 300ms ease;
+  width: 30px;
+  height: auto;
+}
+
+.project-link:hover {
+  opacity: .5;
+  transition: all 300ms ease;
 }

@@ -9,7 +9,8 @@
         "date": 1642114800,
         "github": "https://www.github.com/julienvanbeveren/react-weather-app",
         "website": "https://weather.julienvanbeveren.com",
-        "preview": ""
+        "preview": "",
+        "highlight": true
     },
     {
         "slug": "snypemedia-website", 
@@ -21,7 +22,8 @@
         "date": 1638226800,
         "github": "",
         "website": "https://www.snypemedia.com",
-        "preview": ""
+        "preview": "",
+        "highlight": true
     },
     {
         "slug": "secret-message", 
@@ -33,7 +35,8 @@
         "date": 1643410800,
         "github": "https://github.com/julienvanbeveren/secretmessage",
         "website": "https://secretmessage.julienvanbeveren.com",
-        "preview": ""
+        "preview": "",
+        "highlight": true
     },
     {
         "slug": "snype-photography", 
@@ -45,6 +48,7 @@
         "date": 1643410800,
         "github": "",
         "website": "https://www.snype.photos",
-        "preview": ""
+        "preview": "",
+        "highlight": true
     }
 ]
