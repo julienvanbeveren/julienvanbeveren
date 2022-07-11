@@ -50,5 +50,57 @@
         "website": "https://www.snype.photos",
         "preview": "",
         "highlight": true
+    },
+    {
+        "slug": "react-datetime-picker", 
+        "name": "React DateTime Picker",
+        "short-description": "A React component library for selecting dates",
+        "long-description": "",
+        "status": "Active",
+        "tags": ["React", "CSS", "Typescript", "HTML"],
+        "date": 1655935200,
+        "github": "https://github.com/julienvanbeveren/react-datetime-picker",
+        "website": "https://www.npmjs.com/package/@julienvanbeveren/react-datetime-picker",
+        "preview": "",
+        "highlight": true
+    },
+    {
+        "slug": "react-hooks", 
+        "name": "Custom React Hooks",
+        "short-description": "My personal React custom hook library",
+        "long-description": "",
+        "status": "Active",
+        "tags": ["React", "Typescript"],
+        "date": 1656712800,
+        "github": "https://github.com/julienvanbeveren/react-datetime-picker",
+        "website": "https://www.npmjs.com/package/@julienvanbeveren/react-datetime-picker",
+        "preview": "",
+        "highlight": true
+    },
+    {
+        "slug": "jates", 
+        "name": "Jates",
+        "short-description": "A Javascript Class for working with Date objects",
+        "long-description": "",
+        "status": "Active",
+        "tags": ["Typescript", "Javascript"],
+        "date": 1656367200,
+        "github": "https://github.com/julienvanbeveren/jates",
+        "website": "https://www.npmjs.com/package/jates",
+        "preview": "",
+        "highlight": true
+    },
+    {
+        "slug": "glocalfood", 
+        "name": "GlocalFood",
+        "short-description": "A mock landing page for a local food distribution site",
+        "long-description": "",
+        "status": "Finished",
+        "tags": ["Javascript", "HTML", "CSS"],
+        "date": 1637362800,
+        "github": "",
+        "website": "https://glocalfood.be/",
+        "preview": "",
+        "highlight": true
     }
 ]

@@ -21,6 +21,7 @@ export interface ProjectData {
     highlight: boolean
 }
 
+
 export default function Project({ data, delay }: ProjectProps) {
     
     const [show, setShow] = useState(false)
