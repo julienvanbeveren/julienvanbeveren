@@ -102,5 +102,18 @@
         "website": "https://glocalfood.be/",
         "preview": "",
         "highlight": true
+    },
+    {
+        "slug": "discord-search-engine", 
+        "name": "Discord Search Engine",
+        "short-description": "A Discord bot that responds to code questions with a codeblock containing the answer",
+        "long-description": "",
+        "status": "Finished",
+        "tags": ["Javascript", "Discord.js"],
+        "date": 1652911200,
+        "github": "https://github.com/semicolon-be/discord/tree/main/discord-bots/search-engine",
+        "website": "",
+        "preview": "",
+        "highlight": true
     }
 ]
