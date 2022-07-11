@@ -128,5 +128,18 @@
         "website": "https://www.julienvanbeveren.com",
         "preview": "",
         "highlight": true
+    },
+    {
+        "slug": "sp-chemie-quiz", 
+        "name": "A Chemie Quiz",
+        "short-description": "A single page quiz made with html and javascript",
+        "long-description": "",
+        "status": "Finished",
+        "tags": ["HTML", "Javascript", "CSS"],
+        "date": 1650751200,
+        "github": "",
+        "website": "https://www.bagthrow.xyz/chemie/kamiel/",
+        "preview": "",
+        "highlight": true
     }
 ]
