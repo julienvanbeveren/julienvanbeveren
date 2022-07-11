@@ -115,5 +115,18 @@
         "website": "",
         "preview": "",
         "highlight": true
+    },
+    {
+        "slug": "portfolio", 
+        "name": "Julien Van Beveren's portfolio",
+        "short-description": "My portfolio -> this site :)",
+        "long-description": "",
+        "status": "Finished",
+        "tags": ["React", "Typescript"],
+        "date": 1657144800,
+        "github": "https://github.com/julienvanbeveren/julienvanbeveren",
+        "website": "https://www.julienvanbeveren.com",
+        "preview": "",
+        "highlight": true
     }
 ]
