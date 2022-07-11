@@ -39,7 +39,7 @@ export default function Homepage() {
                         <h1>Hello 👋, I am Julien<br/>I am a webdeveloper</h1>
                         <h2>Welcome to my portfolio</h2>
                         <p></p>
-                        {/* <button onClick={() => navigate('/#projects')}>explore projects</button> */}
+                        <button onClick={() => window.location.href = 'tel:+32468478904'}>have a drink with me ☕</button>
                     </div>
                 </div>
             </section>
