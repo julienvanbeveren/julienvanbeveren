@@ -15,6 +15,14 @@
   background: #171d2b; 
 }
 
+::selection {
+  background: var(--accent-clr);
+}
+
+::-moz-selection {
+  background: var(--accent-clr);
+}
+
 body {
   font-family: source-code-pro, monospace;
   background-color: var(--primary-bg);
