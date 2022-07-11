@@ -18,6 +18,7 @@ export interface ProjectData {
     tags: []
     website: string
     date: number
+    highlight: boolean
 }
 
 export default function Project({ data, delay }: ProjectProps) {

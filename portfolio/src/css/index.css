@@ -37,6 +37,7 @@ section {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 15px;
 }
 
 .hero.container {
@@ -54,6 +55,7 @@ section {
 .hero.container h2 {
   color: var(--secondary-clr);
   margin: 10px 0;
+  font-weight: 500;
 }
 
 .dividor {
@@ -134,4 +136,43 @@ button {
 .project-link:hover {
   opacity: .5;
   transition: all 300ms ease;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .hero.container {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero.container h1 {
+    font-size: 35px;
+    margin: 0;
+  }
+  
+  .hero.container h2 {
+    color: var(--secondary-clr);
+    margin: 10px 0;
+    font-weight: 500;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 10px 10px;
+    margin: 25px 0;
+  }
+
+  .project-card {
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 300ms ease;
+    gap: 10px;
+    min-height: 100px;
+  }
 }
