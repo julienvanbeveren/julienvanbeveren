@@ -90,3 +90,10 @@ section {
 .project-card p {
   margin: 0;
 }
+
+.project-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
