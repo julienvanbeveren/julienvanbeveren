@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useFetch, useScreen } from '@julienvanbeveren/hooks'
+import { useFetch, useScreen, usePersistentState } from '@julienvanbeveren/hooks'
 import Project, { ProjectData } from '../components/Project'
 // @ts-ignore
 import GLOBE from 'vanta/dist/vanta.globe.min'
@@ -10,14 +10,9 @@ export default function Homepage() {
     const navigate = useNavigate()
     const { loading, error, data } = useFetch<ProjectData[]>('https://raw.githubusercontent.com/julienvanbeveren/julienvanbeveren/main/projects/projects.json')
     const { screen } = useScreen([{ name: 'mobile', maxWidth: 480 }, { name: 'desktop', minWidth: 480 }])
-    const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+    const [theme, setTheme] = usePersistentState<'dark' | 'light' | ''>('theme', '')
     const [vantaEffect, setVantaEffect] = useState<any>(null)
 
-    useEffect(() => {
-        document.body.addEventListener('click', e => {
-            setTheme(prev => prev == 'dark' ? 'light' : 'dark')
-        })
-    }, [])
 
     // useEffect(() => {
     //     if (vantaEffect && theme == 'dark') {
@@ -36,7 +31,10 @@ export default function Homepage() {
     //     document.documentElement.style.setProperty('--primary-clr', `var(--primary-clr-${theme})`)
     //     document.documentElement.style.setProperty('--secondary-clr', `var(--secondary-clr-${theme})`)
     //     document.documentElement.style.setProperty('--accent-clr', `var(--accent-clr-${theme})`)
-    // }, [theme])
+
+    //     // @ts-ignore
+    //     setTheme(prev => prev == 'dark' ? 'light' : 'dark')
+    // }, [])
 
     useEffect(() => {
         if (screen == 'desktop') {
