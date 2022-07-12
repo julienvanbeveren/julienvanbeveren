@@ -1,8 +1,25 @@
 :root {
-    --primary-bg: #0f0f1c;
-    --secondary-bg: #111827;
+    /* dark theme */
+    --primary-bg-dark: #0f0f1c;
+    --secondary-bg-dark: #111827;
 
-    --primary-clr: #ffffff;
-    --secondary-clr: #e8e8e8bb;
-    --accent-clr: #1fa8ed;
+    --primary-clr-dark: #ffffff;
+    --secondary-clr-dark: #e8e8e8bb;
+    --accent-clr-dark: #1fa8ed;
+
+    /* light theme */
+    --primary-bg-light: #ffffff;
+    --secondary-bg-light: #e3e3e3;
+
+    --primary-clr-light: #000000;
+    --secondary-clr-light: #202020bb;
+    --accent-clr-light: #1fa8ed;
+
+    /* theme */
+    --primary-bg: var(--primary-bg-dark);
+    --secondary-bg: var(--secondary-bg-dark);
+
+    --primary-clr: var(--primary-clr-dark);
+    --secondary-clr: var(--secondary-clr-dark);
+    --accent-clr: var(--accent-clr-dark);
 }

@@ -26,7 +26,7 @@
 body {
   font-family: source-code-pro, monospace;
   background-color: var(--primary-bg);
-  color: white;
+  color: var(--primary-clr);
   width: 100vw;
   overflow-x: hidden;
 }
@@ -82,7 +82,7 @@ section {
 }
 
 .project-card {
-  background-color: var(--secondary-bg);
+  background: var(--secondary-bg);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -93,6 +93,7 @@ section {
   transition: all 300ms ease;
   gap: 10px;
   min-height: 150px;
+  background: radial-gradient(circle at var(--x) var(--y), #1e273c 0%, var(--secondary-bg) 100%);
 }
 
 .project-card.visible {
@@ -133,7 +134,7 @@ button {
   padding: 10px 20px;
   border: 2px solid var(--accent-clr);
   background-color: rgba(255, 255, 255, 0);
-  color: white;
+  color: var(--primary-clr);
   cursor: pointer;
   transition: all 300ms ease;
 }

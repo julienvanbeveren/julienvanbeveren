@@ -10,11 +10,37 @@ export default function Homepage() {
     const navigate = useNavigate()
     const { loading, error, data } = useFetch<ProjectData[]>('https://raw.githubusercontent.com/julienvanbeveren/julienvanbeveren/main/projects/projects.json')
     const { screen } = useScreen([{ name: 'mobile', maxWidth: 480 }, { name: 'desktop', minWidth: 480 }])
+    const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+    const [vantaEffect, setVantaEffect] = useState<any>(null)
 
     useEffect(() => {
-        let vantaEffect: any
+        document.body.addEventListener('click', e => {
+            setTheme(prev => prev == 'dark' ? 'light' : 'dark')
+        })
+    }, [])
+
+    // useEffect(() => {
+    //     if (vantaEffect && theme == 'dark') {
+    //         vantaEffect && vantaEffect.setOptions({
+    //             color2: 0xffffff,
+    //             backgroundColor: 0x0f0f1c
+    //         })
+    //     } else if (vantaEffect && theme == 'light') {
+    //         vantaEffect && vantaEffect.setOptions({
+    //             color2: 0x000000,
+    //             backgroundColor: 0xffffff
+    //         })
+    //     }
+    //     document.documentElement.style.setProperty('--primary-bg', `var(--primary-bg-${theme})`)
+    //     document.documentElement.style.setProperty('--secondary-bg', `var(--secondary-bg-${theme})`)
+    //     document.documentElement.style.setProperty('--primary-clr', `var(--primary-clr-${theme})`)
+    //     document.documentElement.style.setProperty('--secondary-clr', `var(--secondary-clr-${theme})`)
+    //     document.documentElement.style.setProperty('--accent-clr', `var(--accent-clr-${theme})`)
+    // }, [theme])
+
+    useEffect(() => {
         if (screen == 'desktop') {
-            vantaEffect = GLOBE({
+            setVantaEffect(GLOBE({
                 el: '#hero',
                 mouseControls: true,
                 touchControls: true,
@@ -26,7 +52,7 @@ export default function Homepage() {
                 color: 0x1fa8ed,
                 color2: 0xffffff,
                 backgroundColor: 0x0f0f1c
-            })
+            }))
         }
         return () => vantaEffect && vantaEffect.destroy()
     }, [screen])
