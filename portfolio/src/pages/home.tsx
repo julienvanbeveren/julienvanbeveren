@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useFetch, useScreen, usePersistentState } from '@julienvanbeveren/hooks'
+import { useFetch, useScreen, usePersistentState, useInitialRender } from '@julienvanbeveren/hooks'
 import Project, { ProjectData } from '../components/Project'
 // @ts-ignore
 import GLOBE from 'vanta/dist/vanta.globe.min'
@@ -10,33 +10,26 @@ export default function Homepage() {
     const navigate = useNavigate()
     const { loading, error, data } = useFetch<ProjectData[]>('https://raw.githubusercontent.com/julienvanbeveren/julienvanbeveren/main/projects/projects.json')
     const { screen } = useScreen([{ name: 'mobile', maxWidth: 480 }, { name: 'desktop', minWidth: 480 }])
-    const [theme, setTheme] = usePersistentState<'dark' | 'light' | ''>('theme', '')
+    const [theme, setTheme] = useState('')
     const [vantaEffect, setVantaEffect] = useState<any>(null)
 
+    useInitialRender(() => {
+        const localTheme = localStorage.getItem('theme')
+        const currentTheme = localTheme && ['dark', 'light'].includes(localTheme) ? localTheme : Math.random() >= 0.5 ? 'dark' : 'light'
+        setTheme(currentTheme)
+        localStorage.setItem('theme', currentTheme == 'dark' ? 'light' : 'dark')
+    }, [])
 
-    // useEffect(() => {
-    //     if (vantaEffect && theme == 'dark') {
-    //         vantaEffect && vantaEffect.setOptions({
-    //             color2: 0xffffff,
-    //             backgroundColor: 0x0f0f1c
-    //         })
-    //     } else if (vantaEffect && theme == 'light') {
-    //         vantaEffect && vantaEffect.setOptions({
-    //             color2: 0x000000,
-    //             backgroundColor: 0xffffff
-    //         })
-    //     }
-    //     document.documentElement.style.setProperty('--primary-bg', `var(--primary-bg-${theme})`)
-    //     document.documentElement.style.setProperty('--secondary-bg', `var(--secondary-bg-${theme})`)
-    //     document.documentElement.style.setProperty('--primary-clr', `var(--primary-clr-${theme})`)
-    //     document.documentElement.style.setProperty('--secondary-clr', `var(--secondary-clr-${theme})`)
-    //     document.documentElement.style.setProperty('--accent-clr', `var(--accent-clr-${theme})`)
-
-    //     // @ts-ignore
-    //     setTheme(prev => prev == 'dark' ? 'light' : 'dark')
-    // }, [])
 
     useEffect(() => {
+
+        document.documentElement.style.setProperty('--primary-bg', `var(--primary-bg-${theme})`)
+        document.documentElement.style.setProperty('--secondary-bg', `var(--secondary-bg-${theme})`)
+        document.documentElement.style.setProperty('--secondary-bg-effect', `var(--secondary-bg-effect-${theme})`)
+        document.documentElement.style.setProperty('--primary-clr', `var(--primary-clr-${theme})`)
+        document.documentElement.style.setProperty('--secondary-clr', `var(--secondary-clr-${theme})`)
+        document.documentElement.style.setProperty('--accent-clr', `var(--accent-clr-${theme})`)
+
         if (screen == 'desktop') {
             setVantaEffect(GLOBE({
                 el: '#hero',
@@ -48,13 +41,14 @@ export default function Homepage() {
                 scale: 1.00,
                 scaleMobile: 1.00,
                 color: 0x1fa8ed,
-                color2: 0xffffff,
-                backgroundColor: 0x0f0f1c
+                color2: theme == 'dark' ? 0xffffff : 0x000000,
+                backgroundColor: theme == 'dark' ? 0x0f0f1c : 0xffffff
             }))
         }
         return () => vantaEffect && vantaEffect.destroy()
-    }, [screen])
+    }, [screen, theme])
 
+    
     return (
         <main>
             <section id="hero">

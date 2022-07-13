@@ -2,6 +2,7 @@
     /* dark theme */
     --primary-bg-dark: #0f0f1c;
     --secondary-bg-dark: #111827;
+    --secondary-bg-effect-dark: #1e273c;
 
     --primary-clr-dark: #ffffff;
     --secondary-clr-dark: #e8e8e8bb;
@@ -9,7 +10,8 @@
 
     /* light theme */
     --primary-bg-light: #ffffff;
-    --secondary-bg-light: #e3e3e3;
+    --secondary-bg-light: #eeeeee;
+    --secondary-bg-effect-light: #c3c3c3;
 
     --primary-clr-light: #000000;
     --secondary-clr-light: #202020bb;
@@ -18,6 +20,7 @@
     /* theme */
     --primary-bg: var(--primary-bg-dark);
     --secondary-bg: var(--secondary-bg-dark);
+    --secondary-bg-effect: var(--secondary-bg-effect-dark);
 
     --primary-clr: var(--primary-clr-dark);
     --secondary-clr: var(--secondary-clr-dark);

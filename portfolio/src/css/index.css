@@ -93,7 +93,7 @@ section {
   transition: all 300ms ease;
   gap: 10px;
   min-height: 150px;
-  background: radial-gradient(circle at var(--x) var(--y), #1e273c 0%, var(--secondary-bg) 100%);
+  background: radial-gradient(circle at var(--x) var(--y), var(--secondary-bg-effect) 0%, var(--secondary-bg) 100%);
 }
 
 .project-card.visible {
