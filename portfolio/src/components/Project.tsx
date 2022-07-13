@@ -62,7 +62,7 @@ export default function Project({ data, delay }: ProjectProps) {
     return (
         <div onMouseLeave={e => handleMouseLeave()} style={{ background: 'var(--secondary-bg)' }}ref={projectCardRef} onMouseMove={e => setMousemoveEvent(e)} className={`project-card ${show ? 'visible' : 'hidden'}`}>
             <div className="project-header">
-                <h1 onClick={() => window.open(data.github || data.website)}>{data.slug}</h1>
+                <a style={{ textDecoration: 'none', color: 'var(--primary-clr)' }} target="blank" href={data.github || data.website}><h1>{data.slug}</h1></a>
                 <p>{data['short-description']}</p>
             </div>
             <ProjectLinks data={data}/>
