@@ -10,7 +10,7 @@
         "github": "https://www.github.com/julienvanbeveren/react-weather-app",
         "website": "https://weather.julienvanbeveren.com",
         "preview": "",
-        "highlight": true
+        "highlight": false
     },
     {
         "slug": "snypemedia-website", 
@@ -36,7 +36,7 @@
         "github": "https://github.com/julienvanbeveren/secretmessage",
         "website": "https://secretmessage.julienvanbeveren.com",
         "preview": "",
-        "highlight": true
+        "highlight": false
     },
     {
         "slug": "snype-photography", 
@@ -62,7 +62,7 @@
         "github": "https://github.com/julienvanbeveren/react-datetime-picker",
         "website": "https://www.npmjs.com/package/@julienvanbeveren/react-datetime-picker",
         "preview": "",
-        "highlight": true
+        "highlight": false
     },
     {
         "slug": "react-hooks", 
@@ -88,7 +88,7 @@
         "github": "https://github.com/julienvanbeveren/jates",
         "website": "https://www.npmjs.com/package/jates",
         "preview": "",
-        "highlight": true
+        "highlight": false
     },
     {
         "slug": "glocalfood", 
@@ -140,6 +140,6 @@
         "github": "",
         "website": "https://www.bagthrow.xyz/chemie/kamiel/",
         "preview": "",
-        "highlight": true
+        "highlight": false
     }
 ]
