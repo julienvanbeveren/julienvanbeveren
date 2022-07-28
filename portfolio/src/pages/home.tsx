@@ -12,6 +12,25 @@ export default function Homepage() {
     const { screen } = useScreen([{ name: 'mobile', maxWidth: 480 }, { name: 'desktop', minWidth: 480 }])
     const [theme, setTheme] = useState('')
     const [vantaEffect, setVantaEffect] = useState<any>(null)
+    const [projects, setProjects] = useState<{all: ProjectData[], highlight: ProjectData[], rest: ProjectData[]} | undefined>(undefined)
+    const [showAll, setShowAll] = useState(false)
+
+
+    useEffect(() => {
+        if (!data) return
+        const highlights = data
+        .sort((a,b) => b.date - a.date)
+        .filter(project => project.highlight)
+        const rest = data
+        .sort((a,b) => b.date - a.date)
+        .filter(project => !project.highlight)
+        setProjects({
+            all: data,
+            highlight: highlights,
+            rest: rest
+        })
+    }, [data])
+
 
     useInitialRender(() => {
         const localTheme = localStorage.getItem('theme')
@@ -66,12 +85,17 @@ export default function Homepage() {
                     <h1 className="section-title">Projects</h1>
                     <div className="dividor"></div>
                     <div className="projects-grid">
-                        {data && data
-                        .sort((a,b) => b.date - a.date)
-                        .filter(project => project.highlight)
+                        {projects && projects.highlight
                         .map((project, i) => {
                             return <Project data={project} key={i} delay={i*100}/>
                         })}
+                        {projects && showAll ?
+                        projects.rest
+                        .map((project, i) => {
+                            return <Project data={project} key={i} delay={i*100}/>
+                        }) :
+                        <button onClick={() => setShowAll(true)}>show more</button>
+                        }
                     </div>
                 </div>
             </section>
