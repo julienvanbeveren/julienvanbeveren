@@ -114,7 +114,7 @@
         "github": "https://github.com/semicolon-be/discord/tree/main/discord-bots/search-engine",
         "website": "",
         "preview": "",
-        "highlight": true
+        "highlight": false
     },
     {
         "slug": "portfolio", 
@@ -127,7 +127,7 @@
         "github": "https://github.com/julienvanbeveren/julienvanbeveren",
         "website": "https://www.julienvanbeveren.com",
         "preview": "",
-        "highlight": true
+        "highlight": false
     },
     {
         "slug": "sp-chemie-quiz", 
