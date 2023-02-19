@@ -1,5 +1,5 @@
 <h1 align="center">:wave: Hey, I am Julien Van Beveren</h1>
-<h3 align="center">&#60;WebDeveloper /&#62;</h3>
+<h3 align="center">&#60;Full Stack Developer /&#62;</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=julienvanbeveren&label=Profile%20views&color=0e75b6&style=flat" alt="julienvanbeveren" /> </p>
 
