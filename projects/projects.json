@@ -1,5 +1,18 @@
 [
     {
+        "slug": "notionevents", 
+        "name": "NotionEvents",
+        "short-description": "A webapp to setup webhooks that notify whenever your notion database changes.",
+        "long-description": "Developing based on notion databases, is awesome, but they don't support webhooks. With notionevents you can listen to changes in a few clicks.",
+        "status": "Active",
+        "tags": ["Next13", "Typescript", "Express"],
+        "date": 1688904285,
+        "github": "https://www.github.com/julienvanbeveren/notionevents",
+        "website": "https://notionevents.so",
+        "preview": "",
+        "highlight": true
+    },
+    {
         "slug": "weather-app", 
         "name": "React Weather App",
         "short-description": "A simple React App that displays the current weather.",
