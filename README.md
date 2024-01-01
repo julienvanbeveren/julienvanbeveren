@@ -1,11 +1,11 @@
-<h1 align="left">Hey, I am Julien :wave:</h1>
-<p>I am Julien, a 20-year-old developer from Belgium :belgium:, and I love building stuff </br>
-Currently working @ Tekst, changing the way large enterprises communicate</p>
+# Hey, I am Julien :wave:
+I am Julien, a 20-year-old developer from Belgium :belgium:, and I love building stuff </br>
+Currently working @ Tekst, changing the way large enterprises communicate
 
-<h2>Tech I work use</h2>
+## Tech I work use
 [![My Skills](https://skillicons.dev/icons?i=aws,docker,ts,fastapi,nextjs,nodejs,postgres,prisma,py,redis,tailwind,firebase)](https://skillicons.dev)
 
-<h2>Things I am learning</h2>
+## Things I am learning
 [![Currently Learning](https://skillicons.dev/icons?i=rust,neovim)](https://skillicons.dev)
 
 
