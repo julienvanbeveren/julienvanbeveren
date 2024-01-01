@@ -2,8 +2,8 @@
 I am Julien, a 20-year-old developer from Belgium :belgium:, and I love building stuff </br>
 Currently working @ Tekst, changing the way large enterprises communicate
 
-## Tech I work use
-[![My Skills](https://skillicons.dev/icons?i=aws,docker,ts,fastapi,nextjs,nodejs,postgres,prisma,py,redis,tailwind,firebase)](https://skillicons.dev)
+## Tech I use
+[![My Skills](https://skillicons.dev/icons?i=aws,docker,ts,fastapi,nextjs,nodejs,postgres,prisma,py,redis,tailwind)](https://skillicons.dev)
 
 ## Things I am learning
 [![Currently Learning](https://skillicons.dev/icons?i=rust,neovim)](https://skillicons.dev)
