@@ -16,3 +16,5 @@ Currently working @ Tekst, changing the way large enterprises communicate
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=julienvanbeveren&label=Profile%20views&color=0e75b6&style=flat" alt="julienvanbeveren" /> </p>
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=julienvanbeveren&theme=transparent&hide_border=true&card_width=100&hide_total_contributions=true&hide_longest_streak=true)](https://git.io/streak-stats)
